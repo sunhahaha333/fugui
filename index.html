@@ -123,7 +123,7 @@ footer b { color: #c3ccd8; }
 <body>
 <div class="top">
   <h1><span class="logo"></span>富贵池·股息价格看板</h1>
-  <div class="meta"><span>数据截至 2026-08-12 · 东方财富公开接口 · v12</span><span id="status">加载中…</span><span id="cloudStatus"></span></div>
+  <div class="meta"><span>数据截至 2026-08-12 · 东方财富公开接口 · v13</span><span id="status">加载中…</span><span id="cloudStatus"></span></div>
   <div class="ctl">
     <input id="codeIn" placeholder="添加A股代码，如 600519" inputmode="numeric" autocomplete="off">
     <button id="addBtn">添加</button>
@@ -149,7 +149,7 @@ footer b { color: #c3ccd8; }
 </footer>
 <script>
 
-var PAGE_VERSION = "v12";
+var PAGE_VERSION = "v13";
 
 var SNAPSHOT = {"601318": {"name": "中国平安", "code": "601318", "market": "1", "price": 52.6, "price_date": "2026-08-12", "change_pct": 0.1, "j": 85.36, "k": 62.57, "d": 51.18, "ttm_dps": 2.7, "ttm_yield": 5.13, "scale_lo": 4.0, "scale_hi": 6.0, "scale": [{"yield": 4.0, "price": 67.5}, {"yield": 4.5, "price": 60.0}, {"yield": 5.0, "price": 54.0}, {"yield": 5.5, "price": 49.09}, {"yield": 6.0, "price": 45.0}], "dividends": [{"ex_date": "2026-06-10", "per_share": 1.75, "profile": "10派17.50元(含税,扣税后15.75元)"}, {"ex_date": "2025-10-24", "per_share": 0.95, "profile": "10派9.50元(含税,扣税后8.55元)"}], "note": ""}, "600036": {"name": "招商银行", "code": "600036", "market": "1", "price": 38.7, "price_date": "2026-08-12", "change_pct": -0.64, "j": 84.51, "k": 73.01, "d": 67.26, "ttm_dps": 2.016, "ttm_yield": 5.21, "scale_lo": 4.0, "scale_hi": 6.0, "scale": [{"yield": 4.0, "price": 50.4}, {"yield": 4.5, "price": 44.8}, {"yield": 5.0, "price": 40.32}, {"yield": 5.5, "price": 36.65}, {"yield": 6.0, "price": 33.6}], "dividends": [{"ex_date": "2026-07-10", "per_share": 1.003, "profile": "10派10.03元(含税)"}, {"ex_date": "2026-01-16", "per_share": 1.013, "profile": "10派10.13元(含税,扣税后9.117元)"}], "note": ""}, "600941": {"name": "中国移动", "code": "600941", "market": "1", "price": 96.22, "price_date": "2026-08-12", "change_pct": -0.21, "j": 91.67, "k": 68.15, "d": 56.38, "ttm_dps": 4.7037, "ttm_yield": 4.89, "scale_lo": 4.0, "scale_hi": 6.0, "scale": [{"yield": 4.0, "price": 117.59}, {"yield": 4.5, "price": 104.53}, {"yield": 5.0, "price": 94.07}, {"yield": 5.5, "price": 85.52}, {"yield": 6.0, "price": 78.39}], "dividends": [{"ex_date": "2026-06-05", "per_share": 2.2012, "profile": "10派22.012元(含税,扣税后19.8108元)"}, {"ex_date": "2025-09-01", "per_share": 2.5025, "profile": "10派25.025元(含税,扣税后22.5225元)"}], "note": ""}, "601919": {"name": "中远海控", "code": "601919", "market": "1", "price": 15.42, "price_date": "2026-08-12", "change_pct": -0.39, "j": 105.8, "k": 82.74, "d": 71.2, "ttm_dps": 1.0, "ttm_yield": 6.49, "scale_lo": 4.0, "scale_hi": 6.5, "scale": [{"yield": 4.0, "price": 25.0}, {"yield": 4.5, "price": 22.22}, {"yield": 5.0, "price": 20.0}, {"yield": 5.5, "price": 18.18}, {"yield": 6.0, "price": 16.67}, {"yield": 6.5, "price": 15.38}], "dividends": [{"ex_date": "2026-06-26", "per_share": 0.44, "profile": "10派4.40元(含税,扣税后3.96元)"}, {"ex_date": "2025-10-24", "per_share": 0.56, "profile": "10派5.60元(含税,扣税后5.04元)"}], "note": ""}, "000423": {"name": "东阿阿胶", "code": "000423", "market": "0", "price": 52.97, "price_date": "2026-08-12", "change_pct": -1.21, "j": 93.56, "k": 72.69, "d": 62.26, "ttm_dps": 2.7056, "ttm_yield": 5.11, "scale_lo": 4.0, "scale_hi": 6.0, "scale": [{"yield": 4.0, "price": 67.64}, {"yield": 4.5, "price": 60.12}, {"yield": 5.0, "price": 54.11}, {"yield": 5.5, "price": 49.19}, {"yield": 6.0, "price": 45.09}], "dividends": [{"ex_date": "2026-05-25", "per_share": 1.4355, "profile": "10派14.354904元(含税,扣税后12.919414元)"}, {"ex_date": "2025-09-03", "per_share": 1.2701, "profile": "10派12.700919元(含税,扣税后11.430827元)"}], "note": ""}, "600690": {"name": "海尔智家", "code": "600690", "market": "1", "price": 21.75, "price_date": "2026-08-12", "change_pct": -1.14, "j": 74.64, "k": 65.43, "d": 60.83, "ttm_dps": 1.16071, "ttm_yield": 5.34, "scale_lo": 4.0, "scale_hi": 6.0, "scale": [{"yield": 4.0, "price": 29.02}, {"yield": 4.5, "price": 25.79}, {"yield": 5.0, "price": 23.21}, {"yield": 5.5, "price": 21.1}, {"yield": 6.0, "price": 19.35}], "dividends": [{"ex_date": "2025-11-07", "per_share": 0.2692, "profile": "10派2.692元(含税,扣税后2.4228元)", "pending": false}, {"ex_date": "2025-12-31", "per_share": 0.89151, "profile": "10派8.9151元(含税)", "pending": true}], "note": "含2025年报分红10派8.9151元（股东大会通过，尚未实施）"}, "000538": {"name": "云南白药", "code": "000538", "market": "0", "price": 50.55, "price_date": "2026-08-12", "change_pct": -0.55, "j": 78.79, "k": 64.94, "d": 58.02, "ttm_dps": 1.583, "ttm_yield": 3.13, "scale_lo": 3.0, "scale_hi": 6.0, "scale": [{"yield": 3.0, "price": 52.77}, {"yield": 3.5, "price": 45.23}, {"yield": 4.0, "price": 39.57}, {"yield": 4.5, "price": 35.18}, {"yield": 5.0, "price": 31.66}, {"yield": 5.5, "price": 28.78}, {"yield": 6.0, "price": 26.38}], "dividends": [{"ex_date": "2026-04-30", "per_share": 1.583, "profile": "10派15.83元(含税,扣税后14.247元)"}], "note": ""}, "600795": {"name": "国电电力", "code": "600795", "market": "1", "price": 5.04, "price_date": "2026-08-12", "change_pct": -0.4, "j": 97.75, "k": 68.53, "d": 53.92, "ttm_dps": 0.241, "ttm_yield": 4.78, "scale_lo": 4.0, "scale_hi": 6.0, "scale": [{"yield": 4.0, "price": 6.02}, {"yield": 4.5, "price": 5.36}, {"yield": 5.0, "price": 4.82}, {"yield": 5.5, "price": 4.38}, {"yield": 6.0, "price": 4.02}], "dividends": [{"ex_date": "2026-07-13", "per_share": 0.141, "profile": "10派1.41元(含税,扣税后1.269元)"}, {"ex_date": "2025-10-29", "per_share": 0.1, "profile": "10派1.00元(含税,扣税后0.90元)"}], "note": ""}, "000651": {"name": "格力电器", "code": "000651", "market": "0", "price": 40.23, "price_date": "2026-08-12", "change_pct": -0.76, "j": 76.11, "k": 68.43, "d": 64.58, "ttm_dps": 3.0, "ttm_yield": 7.46, "scale_lo": 4.0, "scale_hi": 7.5, "scale": [{"yield": 4.0, "price": 75.0}, {"yield": 4.5, "price": 66.67}, {"yield": 5.0, "price": 60.0}, {"yield": 5.5, "price": 54.55}, {"yield": 6.0, "price": 50.0}, {"yield": 6.5, "price": 46.15}, {"yield": 7.0, "price": 42.86}, {"yield": 7.5, "price": 40.0}], "dividends": [{"ex_date": "2026-01-23", "per_share": 1.0, "profile": "10派10.00元(含税,扣税后9.00元)"}, {"ex_date": "2025-08-29", "per_share": 2.0, "profile": "10派20.00元(含税,扣税后18.00元)"}], "note": ""}, "600011": {"name": "华能国际", "code": "600011", "market": "1", "price": 6.95, "price_date": "2026-08-12", "change_pct": -0.43, "j": 24.02, "k": 23.07, "d": 22.59, "ttm_dps": 0.4, "ttm_yield": 5.76, "scale_lo": 4.0, "scale_hi": 6.0, "scale": [{"yield": 4.0, "price": 10.0}, {"yield": 4.5, "price": 8.89}, {"yield": 5.0, "price": 8.0}, {"yield": 5.5, "price": 7.27}, {"yield": 6.0, "price": 6.67}], "dividends": [{"ex_date": "2026-07-03", "per_share": 0.4, "profile": "10派4.00元(含税,扣税后3.60元)"}], "note": ""}, "600900": {"name": "长江电力", "code": "600900", "market": "1", "price": 28.02, "price_date": "2026-08-12", "change_pct": -1.02, "j": 67.06, "k": 69.02, "d": 70.0, "ttm_dps": 1.0, "ttm_yield": 3.57, "scale_lo": 3.5, "scale_hi": 6.0, "scale": [{"yield": 3.5, "price": 28.57}, {"yield": 4.0, "price": 25.0}, {"yield": 4.5, "price": 22.22}, {"yield": 5.0, "price": 20.0}, {"yield": 5.5, "price": 18.18}, {"yield": 6.0, "price": 16.67}], "dividends": [{"ex_date": "2026-07-17", "per_share": 0.79, "profile": "10派7.90元(含税,扣税后7.11元)"}, {"ex_date": "2026-02-12", "per_share": 0.21, "profile": "10派2.10元(含税,扣税后1.89元)"}], "note": ""}};
 var DEFAULTS = ["601318", "600036", "600941", "601919", "000423", "600690", "000538", "600795", "000651", "600011", "600900"];
@@ -343,14 +343,29 @@ function pushSync(){
     return ok;
   });
 }
+function mergeUserData(local, cloud){
+  var out = {};
+  function uniq(a,b){ var r=[]; (a||[]).concat(b||[]).forEach(function(x){ if(r.indexOf(x)<0) r.push(x); }); return r; }
+  out.codes = uniq(local.codes, cloud.codes);
+  out.pins = uniq(local.pins, cloud.pins);
+  out.stars = uniq(local.stars, cloud.stars);
+  out.manualOrder = (cloud.manualOrder && cloud.manualOrder.length) ? cloud.manualOrder : (local.manualOrder||null);
+  out.dpsOverrides = Object.assign({}, cloud.dpsOverrides||{}, local.dpsOverrides||{});
+  out.remarks = Object.assign({}, cloud.remarks||{}, local.remarks||{});
+  out.dpsMap = Object.assign({}, cloud.dpsMap||{}, local.dpsMap||{});
+  return out;
+}
 function pullSync(){
   var cfg = getSyncCfg();
   if (!cfg || syncDisabled()) return Promise.resolve(false);
   setCloudStatus("同步中…");
   return backendRead(cfg).then(function(d){
       if (d === null || d === undefined){ setCloudStatus("云端暂无数据"); return "empty"; }
-      applyUserData(d); rebuildLocal(); renderGrid();
-      try{ lastPushSig = JSON.stringify(collectUserData()); }catch(e){}
+      var merged = mergeUserData(collectUserData(), d);
+      var mergedSig = "";
+      try{ mergedSig = JSON.stringify(merged); }catch(e){}
+      try{ lastPushSig = (mergedSig === JSON.stringify(d)) ? mergedSig : null; }catch(e){ lastPushSig = null; }
+      applyUserData(merged); rebuildLocal(); renderGrid();
       setCloudStatus("已同步 " + nowStr());
       return true;
     })
@@ -508,6 +523,7 @@ function refreshOneJSONP(code){
       st.ttm_yield=Math.round(y0*100)/100;
       st.scale_lo=sc.lo; st.scale_hi=sc.hi; st.scale=sc.scale;
       st.dividends=t.parts;
+      if (t.dps > 0){ try{ var dm=loadDpsMap(); dm[code]=t.dps; saveDpsMap(dm); }catch(e){} }
       st.error=null;
       return st;
     }).catch(function(e){ st.error=(e&&e.message)||"err"; return null; });
@@ -667,6 +683,7 @@ function setStatus(txt, warn){
 }
 
 var refreshing = false;
+var lastRefreshOk = false;
 var OFFLINE_WARN = "⚠ 无法联网，显示最近一次数据（自动重试）";
 function loadTencentQuotes(){
   return new Promise(function(resolve){
@@ -844,11 +861,13 @@ function refreshAll(){
     for (var i=0;i<codes.length;i++){ if (fresh[codes[i]]){ dataMap[codes[i]] = fresh[codes[i]]; got++; } }
     renderGrid();
     refreshing = false;
+    lastRefreshOk = got > 0;
     if (got>0) setStatus("服务器数据 · 更新于 "+(d.updated_at||nowStr()), false);
     else setStatus("服务器暂无数据", true);
   }).catch(function(){
     Promise.all([loadTencentQuotes(), loadEastmoneyQuotes()]).then(function(res){
       var ok = res[0] || res[1];
+      lastRefreshOk = ok;
       renderGrid();
       var now = Date.now();
       if (now - lastFullRefresh > 300000){
@@ -884,6 +903,20 @@ function setDps(code){
   if (st.price){ st.ttm_yield = Math.round(st.ttm_dps/st.price*10000)/100; var sc=computeScale(st.ttm_dps, st.ttm_yield); st.scale_lo=sc.lo; st.scale_hi=sc.hi; st.scale=sc.scale; }
   var m = loadDpsMap(); m[code] = st.ttm_dps; saveDpsMap(m);
   renderGrid();
+}
+var fillLast = {};
+function fillMissing(){
+  var now = Date.now();
+  for (var i=0;i<codes.length;i++){
+    var c = codes[i];
+    if (SNAPSHOT[c]) continue;
+    var st = dataMap[c];
+    var incomplete = !st || !st.name || st.name.indexOf("加载中") >= 0 || st.j == null || !st.ttm_dps || !st.price;
+    if (incomplete && (!fillLast[c] || now - fillLast[c] > 120000)){
+      fillLast[c] = now;
+      refreshOneJSONP(c).then(renderGrid);
+    }
+  }
 }
 function tryFillDps(code){
   fetchDividends(code).then(function(rows){
@@ -1065,6 +1098,7 @@ for (var i=0;i<codes.length;i++){
 applyDpsMap();
 renderGrid();
 refreshAll();
+fillMissing();
 // 开盘时段（周一至周五 9:30-11:30、13:00-15:00）每 1 分钟自动刷新；非开盘时间以盘后数据为准，不重复刷新
 function inTradingHours(d){
   d = d || new Date();
@@ -1073,7 +1107,12 @@ function inTradingHours(d){
   var m = d.getHours() * 60 + d.getMinutes();
   return (m >= 570 && m < 690) || (m >= 780 && m < 900);
 }
-setInterval(function(){ if (inTradingHours(new Date())) refreshAll(); }, 60000);
+setInterval(function(){
+  var d = new Date();
+  if (inTradingHours(d)){ refreshAll(); }
+  else if (!lastRefreshOk){ refreshAll(); }
+}, 60000);
+setInterval(fillMissing, 300000);
 if (getSyncCfg()){
   pullSync().then(function(res){
     cloudReady = true;
